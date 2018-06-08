@@ -250,7 +250,7 @@
             this.btn_addMoney.Name = "btn_addMoney";
             this.btn_addMoney.Size = new System.Drawing.Size(102, 41);
             this.btn_addMoney.TabIndex = 6;
-            this.btn_addMoney.Text = "Deposit";
+            this.btn_addMoney.Text = "Add money";
             this.btn_addMoney.UseVisualStyleBackColor = false;
             this.btn_addMoney.Click += new System.EventHandler(this.btn_addMoney_Click);
             // 
