@@ -182,8 +182,9 @@
             this.btn_game3.Name = "btn_game3";
             this.btn_game3.Size = new System.Drawing.Size(228, 84);
             this.btn_game3.TabIndex = 8;
-            this.btn_game3.Text = "CrazyRoulette";
+            this.btn_game3.Text = "Game 3 Janaki";
             this.btn_game3.UseVisualStyleBackColor = false;
+            this.btn_game3.Click += new System.EventHandler(this.btn_game3_Click);
             // 
             // btn_game2
             // 
@@ -197,8 +198,9 @@
             this.btn_game2.Name = "btn_game2";
             this.btn_game2.Size = new System.Drawing.Size(239, 84);
             this.btn_game2.TabIndex = 7;
-            this.btn_game2.Text = "CrazyRoulette";
+            this.btn_game2.Text = "Game2 Filip";
             this.btn_game2.UseVisualStyleBackColor = false;
+            this.btn_game2.Click += new System.EventHandler(this.btn_game2_Click);
             // 
             // label2
             // 
