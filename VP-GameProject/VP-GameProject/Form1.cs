@@ -85,5 +85,16 @@ namespace VP_GameProject
                 LoggedIn();
             }
         }
+
+        private void btn_game1_Click(object sender, EventArgs e)
+        {
+            Roulette RouletteForm = new Roulette();
+            RouletteForm.FormClosed += RouletteClosed;
+            RouletteForm.Show();
+
+        }
+        public void RouletteClosed(object sender, FormClosedEventArgs e) {
+            LoggedIn();
+        }
     }
 }

@@ -34,15 +34,15 @@
             this.panel_Main = new System.Windows.Forms.Panel();
             this.btn_Close = new System.Windows.Forms.Button();
             this.panel_LoggedIn = new System.Windows.Forms.Panel();
-            this.lbl_Welcome = new System.Windows.Forms.Label();
-            this.lbl_Money = new System.Windows.Forms.Label();
-            this.panel_Games = new System.Windows.Forms.Panel();
-            this.btn_game1 = new System.Windows.Forms.Button();
-            this.label2 = new System.Windows.Forms.Label();
-            this.btn_game2 = new System.Windows.Forms.Button();
-            this.btn_game3 = new System.Windows.Forms.Button();
-            this.btn_Logout = new System.Windows.Forms.Button();
             this.btn_addMoney = new System.Windows.Forms.Button();
+            this.btn_Logout = new System.Windows.Forms.Button();
+            this.panel_Games = new System.Windows.Forms.Panel();
+            this.btn_game3 = new System.Windows.Forms.Button();
+            this.btn_game2 = new System.Windows.Forms.Button();
+            this.label2 = new System.Windows.Forms.Label();
+            this.btn_game1 = new System.Windows.Forms.Button();
+            this.lbl_Money = new System.Windows.Forms.Label();
+            this.lbl_Welcome = new System.Windows.Forms.Label();
             this.panel_Main.SuspendLayout();
             this.panel_LoggedIn.SuspendLayout();
             this.panel_Games.SuspendLayout();
@@ -131,31 +131,33 @@
             this.panel_LoggedIn.Size = new System.Drawing.Size(800, 429);
             this.panel_LoggedIn.TabIndex = 4;
             // 
-            // lbl_Welcome
+            // btn_addMoney
             // 
-            this.lbl_Welcome.AutoSize = true;
-            this.lbl_Welcome.BackColor = System.Drawing.Color.Black;
-            this.lbl_Welcome.Font = new System.Drawing.Font("Microsoft Sans Serif", 22.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_Welcome.ForeColor = System.Drawing.Color.Lime;
-            this.lbl_Welcome.Location = new System.Drawing.Point(173, 41);
-            this.lbl_Welcome.Name = "lbl_Welcome";
-            this.lbl_Welcome.Padding = new System.Windows.Forms.Padding(5);
-            this.lbl_Welcome.Size = new System.Drawing.Size(411, 54);
-            this.lbl_Welcome.TabIndex = 3;
-            this.lbl_Welcome.Text = "{User}, Welcome Back";
+            this.btn_addMoney.BackColor = System.Drawing.Color.Black;
+            this.btn_addMoney.FlatAppearance.BorderSize = 0;
+            this.btn_addMoney.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_addMoney.ForeColor = System.Drawing.SystemColors.Control;
+            this.btn_addMoney.Location = new System.Drawing.Point(621, 98);
+            this.btn_addMoney.Name = "btn_addMoney";
+            this.btn_addMoney.Size = new System.Drawing.Size(102, 41);
+            this.btn_addMoney.TabIndex = 6;
+            this.btn_addMoney.Text = "Add money";
+            this.btn_addMoney.UseVisualStyleBackColor = false;
+            this.btn_addMoney.Click += new System.EventHandler(this.btn_addMoney_Click);
             // 
-            // lbl_Money
+            // btn_Logout
             // 
-            this.lbl_Money.AutoSize = true;
-            this.lbl_Money.BackColor = System.Drawing.Color.Black;
-            this.lbl_Money.Font = new System.Drawing.Font("Microsoft Sans Serif", 22.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_Money.ForeColor = System.Drawing.Color.Lime;
-            this.lbl_Money.Location = new System.Drawing.Point(195, 136);
-            this.lbl_Money.Name = "lbl_Money";
-            this.lbl_Money.Padding = new System.Windows.Forms.Padding(5);
-            this.lbl_Money.Size = new System.Drawing.Size(186, 54);
-            this.lbl_Money.TabIndex = 4;
-            this.lbl_Money.Text = "Money: $";
+            this.btn_Logout.BackColor = System.Drawing.Color.Black;
+            this.btn_Logout.FlatAppearance.BorderSize = 0;
+            this.btn_Logout.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_Logout.ForeColor = System.Drawing.SystemColors.Control;
+            this.btn_Logout.Location = new System.Drawing.Point(518, 146);
+            this.btn_Logout.Name = "btn_Logout";
+            this.btn_Logout.Size = new System.Drawing.Size(102, 41);
+            this.btn_Logout.TabIndex = 5;
+            this.btn_Logout.Text = "Logout";
+            this.btn_Logout.UseVisualStyleBackColor = false;
+            this.btn_Logout.Click += new System.EventHandler(this.btn_Logout_Click);
             // 
             // panel_Games
             // 
@@ -167,49 +169,6 @@
             this.panel_Games.Name = "panel_Games";
             this.panel_Games.Size = new System.Drawing.Size(724, 188);
             this.panel_Games.TabIndex = 5;
-            // 
-            // btn_game1
-            // 
-            this.btn_game1.BackColor = System.Drawing.Color.LawnGreen;
-            this.btn_game1.FlatAppearance.BorderSize = 4;
-            this.btn_game1.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Lime;
-            this.btn_game1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Lime;
-            this.btn_game1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_game1.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_game1.Location = new System.Drawing.Point(0, 92);
-            this.btn_game1.Name = "btn_game1";
-            this.btn_game1.Size = new System.Drawing.Size(228, 84);
-            this.btn_game1.TabIndex = 3;
-            this.btn_game1.Text = "CrazyRoulette";
-            this.btn_game1.UseVisualStyleBackColor = false;
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.BackColor = System.Drawing.Color.Black;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 22.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.Color.Lime;
-            this.label2.Location = new System.Drawing.Point(-3, 0);
-            this.label2.Name = "label2";
-            this.label2.Padding = new System.Windows.Forms.Padding(5);
-            this.label2.Size = new System.Drawing.Size(710, 54);
-            this.label2.TabIndex = 6;
-            this.label2.Text = "Let\'s make some money. Choose game:";
-            // 
-            // btn_game2
-            // 
-            this.btn_game2.BackColor = System.Drawing.Color.LawnGreen;
-            this.btn_game2.FlatAppearance.BorderSize = 4;
-            this.btn_game2.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Lime;
-            this.btn_game2.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Lime;
-            this.btn_game2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_game2.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_game2.Location = new System.Drawing.Point(234, 92);
-            this.btn_game2.Name = "btn_game2";
-            this.btn_game2.Size = new System.Drawing.Size(239, 84);
-            this.btn_game2.TabIndex = 7;
-            this.btn_game2.Text = "CrazyRoulette";
-            this.btn_game2.UseVisualStyleBackColor = false;
             // 
             // btn_game3
             // 
@@ -226,33 +185,75 @@
             this.btn_game3.Text = "CrazyRoulette";
             this.btn_game3.UseVisualStyleBackColor = false;
             // 
-            // btn_Logout
+            // btn_game2
             // 
-            this.btn_Logout.BackColor = System.Drawing.Color.Black;
-            this.btn_Logout.FlatAppearance.BorderSize = 0;
-            this.btn_Logout.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_Logout.ForeColor = System.Drawing.SystemColors.Control;
-            this.btn_Logout.Location = new System.Drawing.Point(518, 146);
-            this.btn_Logout.Name = "btn_Logout";
-            this.btn_Logout.Size = new System.Drawing.Size(102, 41);
-            this.btn_Logout.TabIndex = 5;
-            this.btn_Logout.Text = "Logout";
-            this.btn_Logout.UseVisualStyleBackColor = false;
-            this.btn_Logout.Click += new System.EventHandler(this.btn_Logout_Click);
+            this.btn_game2.BackColor = System.Drawing.Color.LawnGreen;
+            this.btn_game2.FlatAppearance.BorderSize = 4;
+            this.btn_game2.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Lime;
+            this.btn_game2.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Lime;
+            this.btn_game2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_game2.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_game2.Location = new System.Drawing.Point(234, 92);
+            this.btn_game2.Name = "btn_game2";
+            this.btn_game2.Size = new System.Drawing.Size(239, 84);
+            this.btn_game2.TabIndex = 7;
+            this.btn_game2.Text = "CrazyRoulette";
+            this.btn_game2.UseVisualStyleBackColor = false;
             // 
-            // btn_addMoney
+            // label2
             // 
-            this.btn_addMoney.BackColor = System.Drawing.Color.Black;
-            this.btn_addMoney.FlatAppearance.BorderSize = 0;
-            this.btn_addMoney.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_addMoney.ForeColor = System.Drawing.SystemColors.Control;
-            this.btn_addMoney.Location = new System.Drawing.Point(621, 98);
-            this.btn_addMoney.Name = "btn_addMoney";
-            this.btn_addMoney.Size = new System.Drawing.Size(102, 41);
-            this.btn_addMoney.TabIndex = 6;
-            this.btn_addMoney.Text = "Add money";
-            this.btn_addMoney.UseVisualStyleBackColor = false;
-            this.btn_addMoney.Click += new System.EventHandler(this.btn_addMoney_Click);
+            this.label2.AutoSize = true;
+            this.label2.BackColor = System.Drawing.Color.Black;
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 22.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.Color.Lime;
+            this.label2.Location = new System.Drawing.Point(-3, 0);
+            this.label2.Name = "label2";
+            this.label2.Padding = new System.Windows.Forms.Padding(5);
+            this.label2.Size = new System.Drawing.Size(710, 54);
+            this.label2.TabIndex = 6;
+            this.label2.Text = "Let\'s make some money. Choose game:";
+            // 
+            // btn_game1
+            // 
+            this.btn_game1.BackColor = System.Drawing.Color.LawnGreen;
+            this.btn_game1.FlatAppearance.BorderSize = 4;
+            this.btn_game1.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Lime;
+            this.btn_game1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Lime;
+            this.btn_game1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_game1.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_game1.Location = new System.Drawing.Point(0, 92);
+            this.btn_game1.Name = "btn_game1";
+            this.btn_game1.Size = new System.Drawing.Size(228, 84);
+            this.btn_game1.TabIndex = 3;
+            this.btn_game1.Text = "CrazyRoulette";
+            this.btn_game1.UseVisualStyleBackColor = false;
+            this.btn_game1.Click += new System.EventHandler(this.btn_game1_Click);
+            // 
+            // lbl_Money
+            // 
+            this.lbl_Money.AutoSize = true;
+            this.lbl_Money.BackColor = System.Drawing.Color.Black;
+            this.lbl_Money.Font = new System.Drawing.Font("Microsoft Sans Serif", 22.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_Money.ForeColor = System.Drawing.Color.Lime;
+            this.lbl_Money.Location = new System.Drawing.Point(195, 136);
+            this.lbl_Money.Name = "lbl_Money";
+            this.lbl_Money.Padding = new System.Windows.Forms.Padding(5);
+            this.lbl_Money.Size = new System.Drawing.Size(186, 54);
+            this.lbl_Money.TabIndex = 4;
+            this.lbl_Money.Text = "Money: $";
+            // 
+            // lbl_Welcome
+            // 
+            this.lbl_Welcome.AutoSize = true;
+            this.lbl_Welcome.BackColor = System.Drawing.Color.Black;
+            this.lbl_Welcome.Font = new System.Drawing.Font("Microsoft Sans Serif", 22.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_Welcome.ForeColor = System.Drawing.Color.Lime;
+            this.lbl_Welcome.Location = new System.Drawing.Point(173, 41);
+            this.lbl_Welcome.Name = "lbl_Welcome";
+            this.lbl_Welcome.Padding = new System.Windows.Forms.Padding(5);
+            this.lbl_Welcome.Size = new System.Drawing.Size(411, 54);
+            this.lbl_Welcome.TabIndex = 3;
+            this.lbl_Welcome.Text = "{User}, Welcome Back";
             // 
             // Form1
             // 
@@ -264,6 +265,7 @@
             this.Controls.Add(this.panel_LoggedIn);
             this.Controls.Add(this.btn_Close);
             this.Controls.Add(this.panel_Main);
+            this.DoubleBuffered = true;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Form1";
             this.Text = "Game Project";
