@@ -182,7 +182,7 @@
             this.btn_game3.Name = "btn_game3";
             this.btn_game3.Size = new System.Drawing.Size(228, 84);
             this.btn_game3.TabIndex = 8;
-            this.btn_game3.Text = "Game 3 Janaki";
+            this.btn_game3.Text = "Roll a dice";
             this.btn_game3.UseVisualStyleBackColor = false;
             this.btn_game3.Click += new System.EventHandler(this.btn_game3_Click);
             // 

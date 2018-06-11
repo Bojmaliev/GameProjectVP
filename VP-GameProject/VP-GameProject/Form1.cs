@@ -17,6 +17,7 @@ namespace VP_GameProject
         public Form1()
         {
             InitializeComponent();
+
             panel_LoggedIn.Visible = false;
             panel_Main.Location = new Point((Screen.PrimaryScreen.WorkingArea.Width - panel_Main.Width) / 2, (Screen.PrimaryScreen.WorkingArea.Height - panel_Main.Height) / 2);
             btn_Close.Location = new Point((Screen.PrimaryScreen.WorkingArea.Width - btn_Close.Width) / 2, Screen.PrimaryScreen.WorkingArea.Height- btn_Close.Height -10);
@@ -89,11 +90,11 @@ namespace VP_GameProject
         private void btn_game1_Click(object sender, EventArgs e)
         {
             Roulette RouletteForm = new Roulette();
-            RouletteForm.FormClosed += RouletteClosed;
+            RouletteForm.FormClosed += GameClosed;
             RouletteForm.Show();
 
         }
-        public void RouletteClosed(object sender, FormClosedEventArgs e) {
+        public void GameClosed(object sender, FormClosedEventArgs e) {
             LoggedIn();
         }
 
@@ -101,16 +102,16 @@ namespace VP_GameProject
         {
             //Change this variables
             Roulette RouletteForm = new Roulette();
-            RouletteForm.FormClosed += RouletteClosed;
+            RouletteForm.FormClosed += GameClosed;
             RouletteForm.Show();
         }
 
         private void btn_game3_Click(object sender, EventArgs e)
         {
             //Change this variables
-            Roulette RouletteForm = new Roulette();
-            RouletteForm.FormClosed += RouletteClosed;
-            RouletteForm.Show();
+            RollADice RollADiceGame = new RollADice();
+            RollADiceGame.FormClosed += GameClosed;
+            RollADiceGame.Show();
         }
     }
 }
