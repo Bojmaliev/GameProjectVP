@@ -12,15 +12,13 @@ namespace VP_GameProject
 {
     public partial class RollADice : Form
     {
-        public int Bet { get; set; }
         public static Random random = new Random();
-        public int obida { get; set; }
+        public RollGame Game { get; set; }
         public RollADice()
         {
             InitializeComponent();
             lblYourName.Text = Form1.CurrPlayer.Name;
             changeMoney();
-            obida = 0;
         }
         public void changeMoney() {
             lblMoney.Text = Form1.CurrPlayer.Money + "$";
@@ -30,7 +28,7 @@ namespace VP_GameProject
         {
             int money = 0;
             int.TryParse(tbBet.Text, out money);
-            Bet = money;
+            Game = new RollGame(money);
             ((Button)sender).Enabled = false;
             Form1.CurrPlayer.Money -= money;
             changeMoney();
@@ -47,17 +45,21 @@ namespace VP_GameProject
 
         private void rollIt_Tick(object sender, EventArgs e)
         {
-            obida++;
-            for (int i = 1; i <= 4; i++) {
-                PictureBox pb = (PictureBox)Controls.Find("pictureBox"+i, false)[0];
-                int brojce = random.Next(1,7);
-                pb.Image = (Image)VP_GameProject.Properties.Resources.ResourceManager.GetObject("Alea_"+brojce);
-            }
-            if (obida == 11) {
-                obida = 0;
+            if (!Game.Rolling()) {
                 rollIt.Stop();
                 btnGo.Enabled = true;
+                Form1.CurrPlayer.Money += Game.GetMoney();
+                lbl_earned.Text = "You earned"+ Game.GetMoney()+"$";
+                changeMoney();
+
             }
+            for (int i = 1; i <= 4; i++)
+            {
+                 PictureBox pb = (PictureBox)Controls.Find("pictureBox" + i, false)[0];
+
+                pb.Image = (Image)VP_GameProject.Properties.Resources.ResourceManager.GetObject("Alea_" + Game.Results[i]);
+            }
+            pbMe.Image = (Image)VP_GameProject.Properties.Resources.ResourceManager.GetObject("Alea_" + Game.Results[0]);
         }
     }
 }

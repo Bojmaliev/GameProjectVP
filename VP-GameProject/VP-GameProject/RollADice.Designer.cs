@@ -45,6 +45,7 @@
             this.label1 = new System.Windows.Forms.Label();
             this.lblMoney = new System.Windows.Forms.Label();
             this.rollIt = new System.Windows.Forms.Timer(this.components);
+            this.lbl_earned = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pbMe)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
@@ -204,12 +205,25 @@
             this.rollIt.Interval = 50;
             this.rollIt.Tick += new System.EventHandler(this.rollIt_Tick);
             // 
+            // lbl_earned
+            // 
+            this.lbl_earned.AutoSize = true;
+            this.lbl_earned.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.lbl_earned.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_earned.ForeColor = System.Drawing.Color.Lime;
+            this.lbl_earned.Location = new System.Drawing.Point(319, 819);
+            this.lbl_earned.Name = "lbl_earned";
+            this.lbl_earned.Size = new System.Drawing.Size(191, 25);
+            this.lbl_earned.TabIndex = 17;
+            this.lbl_earned.Text = "Roll it to get earnings";
+            // 
             // RollADice
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::VP_GameProject.Properties.Resources.grassGreen;
             this.ClientSize = new System.Drawing.Size(882, 853);
+            this.Controls.Add(this.lbl_earned);
             this.Controls.Add(this.lblMoney);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.btnGo);
@@ -256,5 +270,6 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label lblMoney;
         private System.Windows.Forms.Timer rollIt;
+        private System.Windows.Forms.Label lbl_earned;
     }
 }

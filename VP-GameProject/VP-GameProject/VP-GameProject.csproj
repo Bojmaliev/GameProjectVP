@@ -82,6 +82,7 @@
     <Compile Include="RollADice.Designer.cs">
       <DependentUpon>RollADice.cs</DependentUpon>
     </Compile>
+    <Compile Include="RollGame.cs" />
     <Compile Include="Roulette.cs">
       <SubType>Form</SubType>
     </Compile>
