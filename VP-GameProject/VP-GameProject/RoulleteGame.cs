@@ -77,13 +77,13 @@ namespace VP_GameProject
                 }
                 else if (bop.Position == 16)
                 {
-                    if (position == 3 || position == 5 || position == 6 || position == 10 || position == 11 || position == 12 || position == 13) {
+                    if (position == 3 || position == 6 || position == 8 || position == 10 || position == 11 || position == 12 || position == 13) {
                         suma += bop.Chance;
                     }       
                 }
                 else if (bop.Position == 17)
                 {
-                    if (position == 1 || position == 2 || position == 4 || position == 7 || position == 8 || position == 9) 
+                    if (position == 1 || position == 2 || position == 4 || position == 5 || position == 7 || position == 9) 
                     {
                         suma += bop.Chance;
                     }
