@@ -46,6 +46,8 @@
             this.lblMoney = new System.Windows.Forms.Label();
             this.rollIt = new System.Windows.Forms.Timer(this.components);
             this.lbl_earned = new System.Windows.Forms.Label();
+            this.tbNumberRollings = new System.Windows.Forms.TextBox();
+            this.label7 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pbMe)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
@@ -154,7 +156,7 @@
             this.tbBet.Location = new System.Drawing.Point(438, 658);
             this.tbBet.Name = "tbBet";
             this.tbBet.Size = new System.Drawing.Size(100, 30);
-            this.tbBet.TabIndex = 11;
+            this.tbBet.TabIndex = 19;
             this.tbBet.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.tbBet_KeyPress);
             // 
             // label6
@@ -174,7 +176,7 @@
             this.btnGo.ForeColor = System.Drawing.Color.White;
             this.btnGo.Location = new System.Drawing.Point(438, 694);
             this.btnGo.Name = "btnGo";
-            this.btnGo.Size = new System.Drawing.Size(100, 47);
+            this.btnGo.Size = new System.Drawing.Size(223, 47);
             this.btnGo.TabIndex = 13;
             this.btnGo.Text = "Go";
             this.btnGo.UseVisualStyleBackColor = false;
@@ -217,12 +219,33 @@
             this.lbl_earned.TabIndex = 17;
             this.lbl_earned.Text = "Roll it to get earnings";
             // 
+            // tbNumberRollings
+            // 
+            this.tbNumberRollings.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tbNumberRollings.Location = new System.Drawing.Point(553, 658);
+            this.tbNumberRollings.Name = "tbNumberRollings";
+            this.tbNumberRollings.Size = new System.Drawing.Size(100, 30);
+            this.tbNumberRollings.TabIndex = 18;
+            this.tbNumberRollings.Text = "11";
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.Location = new System.Drawing.Point(549, 629);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(112, 24);
+            this.label7.TabIndex = 19;
+            this.label7.Text = "No. Rollings";
+            // 
             // RollADice
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::VP_GameProject.Properties.Resources.grassGreen;
             this.ClientSize = new System.Drawing.Size(882, 853);
+            this.Controls.Add(this.label7);
+            this.Controls.Add(this.tbNumberRollings);
             this.Controls.Add(this.lbl_earned);
             this.Controls.Add(this.lblMoney);
             this.Controls.Add(this.label1);
@@ -271,5 +294,7 @@
         private System.Windows.Forms.Label lblMoney;
         private System.Windows.Forms.Timer rollIt;
         private System.Windows.Forms.Label lbl_earned;
+        private System.Windows.Forms.TextBox tbNumberRollings;
+        private System.Windows.Forms.Label label7;
     }
 }

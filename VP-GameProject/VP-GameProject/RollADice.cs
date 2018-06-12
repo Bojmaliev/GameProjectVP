@@ -28,7 +28,10 @@ namespace VP_GameProject
         {
             int money = 0;
             int.TryParse(tbBet.Text, out money);
-            Game = new RollGame(money);
+            if (Form1.CurrPlayer.Money < money) return;
+            int rollings = 11;
+            int.TryParse(tbNumberRollings.Text, out rollings);
+            Game = new RollGame(money, rollings);
             ((Button)sender).Enabled = false;
             Form1.CurrPlayer.Money -= money;
             changeMoney();
@@ -49,7 +52,7 @@ namespace VP_GameProject
                 rollIt.Stop();
                 btnGo.Enabled = true;
                 Form1.CurrPlayer.Money += Game.GetMoney();
-                lbl_earned.Text = "You earned"+ Game.GetMoney()+"$";
+                lbl_earned.Text = "You earned "+ Game.GetMoney()+"$";
                 changeMoney();
 
             }
