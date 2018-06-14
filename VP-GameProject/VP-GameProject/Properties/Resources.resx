@@ -121,20 +121,26 @@
   <data name="greenGrass" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\greenGrass.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="bet_1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\bet_1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="bet_7" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\bet_7.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="bg" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\bg.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="bgButton" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\bgButton.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="bet_4" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\bet_4.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="Clubgold" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Clubgold.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="bet_3" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\bet_3.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="bet_6" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\bet_6.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="bet_7" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\bet_7.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="mainBg" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\mainBg.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="male" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\male.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -175,8 +181,11 @@
   <data name="Alea_2" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Alea_2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="bet_8" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\bet_8.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="bet_1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\bet_1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="bet_2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\bet_2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Alea_1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Alea_1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -190,11 +199,11 @@
   <data name="bet_11" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\bet_11.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="bet_2" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\bet_2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="bet_8" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\bet_8.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="bet_3" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\bet_3.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="bg" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\bg.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Fruit_2" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Fruit_2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -202,7 +211,7 @@
   <data name="bet_10" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\bet_10.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Clubgold" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Clubgold.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="rullete background" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\rullete background.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

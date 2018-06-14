@@ -20,7 +20,7 @@ namespace VP_GameProject
         public List<BetOnPicture> Bets { get; set; }
 
         public RoulleteGame() {
-            Timer = 15;
+            Timer = 25;
             GameFinished = false;
             Rotated = 0;
             TimeToRun = random.Next(5,32);

@@ -5,6 +5,7 @@ using System.Data;
 using System.Drawing;
 using System.IO;
 using System.Linq;
+using System.Reflection;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -21,6 +22,12 @@ namespace VP_GameProject
             panel_LoggedIn.Visible = false;
             panel_Main.Location = new Point((Screen.PrimaryScreen.WorkingArea.Width - panel_Main.Width) / 2, (Screen.PrimaryScreen.WorkingArea.Height - panel_Main.Height) / 2);
             btn_Close.Location = new Point((Screen.PrimaryScreen.WorkingArea.Width - btn_Close.Width) / 2, Screen.PrimaryScreen.WorkingArea.Height- btn_Close.Height -10);
+            foreach (Control control in Controls) // reflection to sort flickering.
+            {
+                typeof(Control).InvokeMember("DoubleBuffered",
+                    BindingFlags.SetProperty | BindingFlags.Instance | BindingFlags.NonPublic,
+                    null, control, new object[] { true });
+            }
         }
 
         private void btn_Close_Click(object sender, EventArgs e)
@@ -115,6 +122,5 @@ namespace VP_GameProject
             RollADiceGame.FormClosed += GameClosed;
             RollADiceGame.Show();
         }
-        
     }
 }

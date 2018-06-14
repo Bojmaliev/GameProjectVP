@@ -28,9 +28,12 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.btn_NewUser = new System.Windows.Forms.Button();
             this.btn_Login = new System.Windows.Forms.Button();
             this.panel_Main = new System.Windows.Forms.Panel();
+            this.label1 = new System.Windows.Forms.Label();
             this.btn_Close = new System.Windows.Forms.Button();
             this.panel_LoggedIn = new System.Windows.Forms.Panel();
             this.btn_addMoney = new System.Windows.Forms.Button();
@@ -42,7 +45,7 @@
             this.btn_game1 = new System.Windows.Forms.Button();
             this.lbl_Money = new System.Windows.Forms.Label();
             this.lbl_Welcome = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
+            this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.panel_Main.SuspendLayout();
             this.panel_LoggedIn.SuspendLayout();
             this.panel_Games.SuspendLayout();
@@ -50,12 +53,16 @@
             // 
             // btn_NewUser
             // 
-            this.btn_NewUser.BackColor = System.Drawing.Color.LawnGreen;
-            this.btn_NewUser.FlatAppearance.BorderSize = 4;
-            this.btn_NewUser.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Lime;
-            this.btn_NewUser.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Lime;
+            this.btn_NewUser.BackColor = System.Drawing.Color.Transparent;
+            this.btn_NewUser.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btn_NewUser.BackgroundImage")));
+            this.btn_NewUser.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btn_NewUser.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btn_NewUser.FlatAppearance.BorderSize = 0;
+            this.btn_NewUser.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.btn_NewUser.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
             this.btn_NewUser.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_NewUser.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_NewUser.ForeColor = System.Drawing.SystemColors.ButtonFace;
             this.btn_NewUser.Location = new System.Drawing.Point(407, 171);
             this.btn_NewUser.Name = "btn_NewUser";
             this.btn_NewUser.Size = new System.Drawing.Size(224, 84);
@@ -66,12 +73,16 @@
             // 
             // btn_Login
             // 
-            this.btn_Login.BackColor = System.Drawing.Color.LawnGreen;
-            this.btn_Login.FlatAppearance.BorderSize = 4;
-            this.btn_Login.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Lime;
-            this.btn_Login.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Lime;
+            this.btn_Login.BackColor = System.Drawing.Color.Transparent;
+            this.btn_Login.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btn_Login.BackgroundImage")));
+            this.btn_Login.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btn_Login.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btn_Login.FlatAppearance.BorderSize = 0;
+            this.btn_Login.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.btn_Login.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
             this.btn_Login.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_Login.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_Login.ForeColor = System.Drawing.SystemColors.ButtonFace;
             this.btn_Login.Location = new System.Drawing.Point(158, 171);
             this.btn_Login.Name = "btn_Login";
             this.btn_Login.Size = new System.Drawing.Size(228, 84);
@@ -90,6 +101,19 @@
             this.panel_Main.Name = "panel_Main";
             this.panel_Main.Size = new System.Drawing.Size(800, 270);
             this.panel_Main.TabIndex = 3;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.Black;
+            this.label1.Font = new System.Drawing.Font("Calibri", 22.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.Red;
+            this.label1.Location = new System.Drawing.Point(31, 60);
+            this.label1.Name = "label1";
+            this.label1.Padding = new System.Windows.Forms.Padding(5);
+            this.label1.Size = new System.Drawing.Size(616, 56);
+            this.label1.TabIndex = 7;
+            this.label1.Text = "WELCOME TO YOUR FUTURE CASINO";
             // 
             // btn_Close
             // 
@@ -159,13 +183,17 @@
             // 
             // btn_game3
             // 
-            this.btn_game3.BackColor = System.Drawing.Color.LawnGreen;
-            this.btn_game3.FlatAppearance.BorderSize = 4;
-            this.btn_game3.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Lime;
-            this.btn_game3.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Lime;
+            this.btn_game3.BackColor = System.Drawing.Color.Transparent;
+            this.btn_game3.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btn_game3.BackgroundImage")));
+            this.btn_game3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btn_game3.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btn_game3.FlatAppearance.BorderSize = 0;
+            this.btn_game3.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.btn_game3.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
             this.btn_game3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_game3.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_game3.Location = new System.Drawing.Point(479, 92);
+            this.btn_game3.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.btn_game3.Location = new System.Drawing.Point(496, 101);
             this.btn_game3.Name = "btn_game3";
             this.btn_game3.Size = new System.Drawing.Size(228, 84);
             this.btn_game3.TabIndex = 8;
@@ -175,13 +203,17 @@
             // 
             // btn_game2
             // 
-            this.btn_game2.BackColor = System.Drawing.Color.LawnGreen;
-            this.btn_game2.FlatAppearance.BorderSize = 4;
-            this.btn_game2.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Lime;
-            this.btn_game2.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Lime;
+            this.btn_game2.BackColor = System.Drawing.Color.Transparent;
+            this.btn_game2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btn_game2.BackgroundImage")));
+            this.btn_game2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btn_game2.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btn_game2.FlatAppearance.BorderSize = 0;
+            this.btn_game2.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.btn_game2.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
             this.btn_game2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_game2.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_game2.Location = new System.Drawing.Point(234, 92);
+            this.btn_game2.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.btn_game2.Location = new System.Drawing.Point(251, 101);
             this.btn_game2.Name = "btn_game2";
             this.btn_game2.Size = new System.Drawing.Size(239, 84);
             this.btn_game2.TabIndex = 7;
@@ -193,26 +225,30 @@
             // 
             this.label2.AutoSize = true;
             this.label2.BackColor = System.Drawing.Color.Black;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 22.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Font = new System.Drawing.Font("Calibri", 22.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.Lime;
             this.label2.Location = new System.Drawing.Point(-3, 0);
             this.label2.Name = "label2";
             this.label2.Padding = new System.Windows.Forms.Padding(5);
-            this.label2.Size = new System.Drawing.Size(710, 54);
+            this.label2.Size = new System.Drawing.Size(644, 56);
             this.label2.TabIndex = 6;
             this.label2.Text = "Let\'s make some money. Choose game:";
             // 
             // btn_game1
             // 
-            this.btn_game1.BackColor = System.Drawing.Color.LawnGreen;
-            this.btn_game1.FlatAppearance.BorderSize = 4;
-            this.btn_game1.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Lime;
-            this.btn_game1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Lime;
+            this.btn_game1.BackColor = System.Drawing.Color.Transparent;
+            this.btn_game1.BackgroundImage = global::VP_GameProject.Properties.Resources.bgButton;
+            this.btn_game1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btn_game1.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btn_game1.FlatAppearance.BorderSize = 0;
+            this.btn_game1.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.btn_game1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
             this.btn_game1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_game1.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_game1.Location = new System.Drawing.Point(0, 92);
+            this.btn_game1.ForeColor = System.Drawing.SystemColors.Control;
+            this.btn_game1.Location = new System.Drawing.Point(3, 101);
             this.btn_game1.Name = "btn_game1";
-            this.btn_game1.Size = new System.Drawing.Size(228, 84);
+            this.btn_game1.Size = new System.Drawing.Size(246, 80);
             this.btn_game1.TabIndex = 3;
             this.btn_game1.Text = "CrazyRoulette";
             this.btn_game1.UseVisualStyleBackColor = false;
@@ -222,12 +258,12 @@
             // 
             this.lbl_Money.AutoSize = true;
             this.lbl_Money.BackColor = System.Drawing.Color.Black;
-            this.lbl_Money.Font = new System.Drawing.Font("Microsoft Sans Serif", 22.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_Money.Font = new System.Drawing.Font("Calibri", 22.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl_Money.ForeColor = System.Drawing.Color.Lime;
             this.lbl_Money.Location = new System.Drawing.Point(195, 136);
             this.lbl_Money.Name = "lbl_Money";
             this.lbl_Money.Padding = new System.Windows.Forms.Padding(5);
-            this.lbl_Money.Size = new System.Drawing.Size(186, 54);
+            this.lbl_Money.Size = new System.Drawing.Size(178, 56);
             this.lbl_Money.TabIndex = 4;
             this.lbl_Money.Text = "Money: $";
             // 
@@ -235,34 +271,21 @@
             // 
             this.lbl_Welcome.AutoSize = true;
             this.lbl_Welcome.BackColor = System.Drawing.Color.Black;
-            this.lbl_Welcome.Font = new System.Drawing.Font("Microsoft Sans Serif", 22.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_Welcome.ForeColor = System.Drawing.Color.Lime;
+            this.lbl_Welcome.Font = new System.Drawing.Font("Calibri", 22.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_Welcome.ForeColor = System.Drawing.Color.Red;
             this.lbl_Welcome.Location = new System.Drawing.Point(173, 41);
             this.lbl_Welcome.Name = "lbl_Welcome";
             this.lbl_Welcome.Padding = new System.Windows.Forms.Padding(5);
-            this.lbl_Welcome.Size = new System.Drawing.Size(411, 54);
+            this.lbl_Welcome.Size = new System.Drawing.Size(378, 56);
             this.lbl_Welcome.TabIndex = 3;
             this.lbl_Welcome.Text = "{User}, Welcome Back";
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.BackColor = System.Drawing.Color.Black;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 22.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.Lime;
-            this.label1.Location = new System.Drawing.Point(31, 60);
-            this.label1.Name = "label1";
-            this.label1.Padding = new System.Windows.Forms.Padding(5);
-            this.label1.Size = new System.Drawing.Size(723, 54);
-            this.label1.TabIndex = 7;
-            this.label1.Text = "WELCOME TO YOUR FUTURE CASINO";
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackgroundImage = global::VP_GameProject.Properties.Resources.bg;
-            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.BackgroundImage = global::VP_GameProject.Properties.Resources.mainBg;
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1244, 772);
             this.Controls.Add(this.panel_LoggedIn);
             this.Controls.Add(this.btn_Close);
@@ -299,6 +322,7 @@
         private System.Windows.Forms.Button btn_game2;
         private System.Windows.Forms.Button btn_addMoney;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Timer timer1;
     }
 }
 

@@ -37,13 +37,15 @@
             // 
             // btn_Login
             // 
+            this.btn_Login.BackColor = System.Drawing.Color.Lime;
+            this.btn_Login.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_Login.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_Login.Location = new System.Drawing.Point(17, 168);
             this.btn_Login.Name = "btn_Login";
             this.btn_Login.Size = new System.Drawing.Size(312, 50);
             this.btn_Login.TabIndex = 12;
             this.btn_Login.Text = "Login";
-            this.btn_Login.UseVisualStyleBackColor = true;
+            this.btn_Login.UseVisualStyleBackColor = false;
             this.btn_Login.Click += new System.EventHandler(this.btn_Login_Click);
             // 
             // tbPin
@@ -59,6 +61,7 @@
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.ForeColor = System.Drawing.Color.White;
             this.label4.Location = new System.Drawing.Point(12, 70);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(90, 25);
@@ -77,6 +80,7 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.ForeColor = System.Drawing.Color.White;
             this.label3.Location = new System.Drawing.Point(12, 9);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(151, 25);
@@ -87,6 +91,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.ClientSize = new System.Drawing.Size(351, 240);
             this.Controls.Add(this.btn_Login);
             this.Controls.Add(this.tbPin);
@@ -94,6 +99,7 @@
             this.Controls.Add(this.tbUsername);
             this.Controls.Add(this.label3);
             this.Name = "Login";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Login";
             this.ResumeLayout(false);
             this.PerformLayout();

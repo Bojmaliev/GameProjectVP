@@ -31,6 +31,8 @@
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Roulette));
             this.panelGame = new System.Windows.Forms.Panel();
+            this.pbIMAGE = new System.Windows.Forms.PictureBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.lblTimeStart = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
@@ -41,8 +43,6 @@
             this.lbl_Bet = new System.Windows.Forms.Label();
             this.listBox1 = new System.Windows.Forms.ListBox();
             this.label3 = new System.Windows.Forms.Label();
-            this.pbIMAGE = new System.Windows.Forms.PictureBox();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panelGame.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbIMAGE)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -56,6 +56,29 @@
             this.panelGame.Name = "panelGame";
             this.panelGame.Size = new System.Drawing.Size(600, 600);
             this.panelGame.TabIndex = 0;
+            // 
+            // pbIMAGE
+            // 
+            this.pbIMAGE.BackColor = System.Drawing.Color.White;
+            this.pbIMAGE.Image = ((System.Drawing.Image)(resources.GetObject("pbIMAGE.Image")));
+            this.pbIMAGE.Location = new System.Drawing.Point(29, 27);
+            this.pbIMAGE.Name = "pbIMAGE";
+            this.pbIMAGE.Size = new System.Drawing.Size(600, 600);
+            this.pbIMAGE.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.pbIMAGE.TabIndex = 1;
+            this.pbIMAGE.TabStop = false;
+            this.pbIMAGE.Visible = false;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.BackColor = System.Drawing.Color.White;
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(0, 0);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(600, 600);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.pictureBox1.TabIndex = 0;
+            this.pictureBox1.TabStop = false;
             // 
             // lblTimeStart
             // 
@@ -148,30 +171,10 @@
             this.label3.TabIndex = 8;
             this.label3.Text = "The regions aren\'t calulated properly";
             // 
-            // pbIMAGE
-            // 
-            this.pbIMAGE.Image = ((System.Drawing.Image)(resources.GetObject("pbIMAGE.Image")));
-            this.pbIMAGE.Location = new System.Drawing.Point(29, 27);
-            this.pbIMAGE.Name = "pbIMAGE";
-            this.pbIMAGE.Size = new System.Drawing.Size(600, 600);
-            this.pbIMAGE.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
-            this.pbIMAGE.TabIndex = 1;
-            this.pbIMAGE.TabStop = false;
-            this.pbIMAGE.Visible = false;
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(0, 0);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(600, 600);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
-            this.pictureBox1.TabIndex = 0;
-            this.pictureBox1.TabStop = false;
-            // 
             // Roulette
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1355, 673);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.listBox1);

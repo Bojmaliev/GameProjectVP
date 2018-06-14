@@ -263,6 +263,16 @@ namespace VP_GameProject.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap bgButton {
+            get {
+                object obj = ResourceManager.GetObject("bgButton", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Clubgold {
             get {
                 object obj = ResourceManager.GetObject("Clubgold", resourceCulture);
@@ -333,9 +343,29 @@ namespace VP_GameProject.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap mainBg {
+            get {
+                object obj = ResourceManager.GetObject("mainBg", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap male {
             get {
                 object obj = ResourceManager.GetObject("male", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap rullete_background {
+            get {
+                object obj = ResourceManager.GetObject("rullete background", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
