@@ -5,7 +5,9 @@ using System.Data;
 using System.Drawing;
 using System.Drawing.Drawing2D;
 using System.Linq;
+using System.Media;
 using System.Text;
+using System.Threading;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using VP_GameProject.Properties;
@@ -15,6 +17,7 @@ namespace VP_GameProject
     public partial class Roulette : Form
     {
         public RoulleteGame TheGame = null;
+        public SoundPlayer SoundPlayer{ get; set; }
         public Roulette()
         {
             InitializeComponent();
@@ -23,6 +26,7 @@ namespace VP_GameProject
             lbl_Earned.Text = "Make a round to get your earnings";
             changeMoney();
             timerSeconds.Start();
+            SoundPlayer = new SoundPlayer();
             timerRoll.Start();
             int left = 620;
             int top = 0;
@@ -72,6 +76,8 @@ namespace VP_GameProject
                     left = 620;
                     top += 140;
                 }
+                SoundPlayer.Stream = Resources.Vlogovi;
+                SoundPlayer.Play();
             }
 
         }
@@ -84,6 +90,10 @@ namespace VP_GameProject
         {
             if (!TheGame.GameFinished)
             {
+                if (TheGame.Timer == 3) {
+                    SoundPlayer.Stream = Resources.Oblozuvanjeto;
+                    SoundPlayer.Play();
+                }
                 if (TheGame.Timer > 0) TheGame.Timer--;
                 lblTimeStart.Text = TheGame.Timer.ToString();
             }
@@ -92,12 +102,24 @@ namespace VP_GameProject
                 int position = (int)Math.Abs(Math.Floor(res / (6.3 / 13.00)));
 
                 int suma = TheGame.CalculateFor(position);
+                if (suma > 0) {
+                    SoundPlayer.Stream = Resources.money;
+                    SoundPlayer.Play();
+                }
                 Form1.CurrPlayer.Money += suma;
                 lbl_Earned.Text = "You earned "+suma+"$";
                 changeMoney();
-                TheGame = new RoulleteGame();
                 loadTheBets();
-                lbl_Bet.Text = "Your bet " + TheGame.Bets.Count() + "$"; 
+                lbl_Bet.Text = "Your bet " + TheGame.Bets.Count() + "$";
+
+                new Thread(() =>
+                {
+                    Thread.Sleep(3000);
+                    SoundPlayer.Stream = Resources.Vlogovi;
+                    SoundPlayer.Play();
+                }).Start();
+                TheGame = new RoulleteGame();
+
             }
         }
 

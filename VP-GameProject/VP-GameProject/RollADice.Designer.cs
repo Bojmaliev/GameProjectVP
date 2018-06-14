@@ -39,20 +39,22 @@
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.label5 = new System.Windows.Forms.Label();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
-            this.tbBet = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
             this.btnGo = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.lblMoney = new System.Windows.Forms.Label();
             this.rollIt = new System.Windows.Forms.Timer(this.components);
             this.lbl_earned = new System.Windows.Forms.Label();
-            this.tbNumberRollings = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
+            this.tbBet = new System.Windows.Forms.NumericUpDown();
+            this.tbNumberRollings = new System.Windows.Forms.NumericUpDown();
             ((System.ComponentModel.ISupportInitialize)(this.pbMe)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tbBet)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tbNumberRollings)).BeginInit();
             this.SuspendLayout();
             // 
             // pbMe
@@ -150,15 +152,6 @@
             this.pictureBox4.TabIndex = 9;
             this.pictureBox4.TabStop = false;
             // 
-            // tbBet
-            // 
-            this.tbBet.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tbBet.Location = new System.Drawing.Point(438, 658);
-            this.tbBet.Name = "tbBet";
-            this.tbBet.Size = new System.Drawing.Size(100, 30);
-            this.tbBet.TabIndex = 19;
-            this.tbBet.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.tbBet_KeyPress);
-            // 
             // label6
             // 
             this.label6.AutoSize = true;
@@ -219,15 +212,6 @@
             this.lbl_earned.TabIndex = 17;
             this.lbl_earned.Text = "Roll it to get earnings";
             // 
-            // tbNumberRollings
-            // 
-            this.tbNumberRollings.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tbNumberRollings.Location = new System.Drawing.Point(553, 658);
-            this.tbNumberRollings.Name = "tbNumberRollings";
-            this.tbNumberRollings.Size = new System.Drawing.Size(100, 30);
-            this.tbNumberRollings.TabIndex = 18;
-            this.tbNumberRollings.Text = "11";
-            // 
             // label7
             // 
             this.label7.AutoSize = true;
@@ -238,20 +222,41 @@
             this.label7.TabIndex = 19;
             this.label7.Text = "No. Rollings";
             // 
+            // tbBet
+            // 
+            this.tbBet.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tbBet.Location = new System.Drawing.Point(438, 658);
+            this.tbBet.Name = "tbBet";
+            this.tbBet.Size = new System.Drawing.Size(109, 30);
+            this.tbBet.TabIndex = 20;
+            // 
+            // tbNumberRollings
+            // 
+            this.tbNumberRollings.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tbNumberRollings.Location = new System.Drawing.Point(553, 658);
+            this.tbNumberRollings.Name = "tbNumberRollings";
+            this.tbNumberRollings.Size = new System.Drawing.Size(109, 30);
+            this.tbNumberRollings.TabIndex = 20;
+            this.tbNumberRollings.Value = new decimal(new int[] {
+            11,
+            0,
+            0,
+            0});
+            // 
             // RollADice
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::VP_GameProject.Properties.Resources.grassGreen;
             this.ClientSize = new System.Drawing.Size(882, 853);
-            this.Controls.Add(this.label7);
             this.Controls.Add(this.tbNumberRollings);
+            this.Controls.Add(this.tbBet);
+            this.Controls.Add(this.label7);
             this.Controls.Add(this.lbl_earned);
             this.Controls.Add(this.lblMoney);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.btnGo);
             this.Controls.Add(this.label6);
-            this.Controls.Add(this.tbBet);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.pictureBox4);
             this.Controls.Add(this.label4);
@@ -270,6 +275,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tbBet)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tbNumberRollings)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -287,14 +294,14 @@
         private System.Windows.Forms.PictureBox pictureBox3;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.PictureBox pictureBox4;
-        private System.Windows.Forms.TextBox tbBet;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Button btnGo;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label lblMoney;
         private System.Windows.Forms.Timer rollIt;
         private System.Windows.Forms.Label lbl_earned;
-        private System.Windows.Forms.TextBox tbNumberRollings;
         private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.NumericUpDown tbBet;
+        private System.Windows.Forms.NumericUpDown tbNumberRollings;
     }
 }

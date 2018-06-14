@@ -2,8 +2,10 @@
 using System.Collections.Generic;
 using System.Drawing;
 using System.Linq;
+using System.Media;
 using System.Text;
 using System.Threading.Tasks;
+using VP_GameProject.Properties;
 
 namespace VP_GameProject
 {
@@ -89,7 +91,6 @@ namespace VP_GameProject
                     }
                 }
             }
-
             return (int)(suma);
         }
 

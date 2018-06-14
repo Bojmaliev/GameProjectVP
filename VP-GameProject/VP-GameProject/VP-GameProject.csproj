@@ -237,5 +237,14 @@
   <ItemGroup>
     <None Include="Resources\rullete background.jpg" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\money.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Oblozuvanjeto.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Vlogovi.wav" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

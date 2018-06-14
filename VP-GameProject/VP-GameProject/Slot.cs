@@ -4,9 +4,11 @@ using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Linq;
+using System.Media;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using VP_GameProject.Properties;
 
 namespace VP_GameProject
 {
@@ -20,6 +22,7 @@ namespace VP_GameProject
         public static Random r = new Random();
         public int number = 0;
         public bool flag = false;
+        public SoundPlayer SoundPlayer { get; set; }
 
 
         // Declaring of each picture
@@ -35,6 +38,7 @@ namespace VP_GameProject
 
         private void Slot_Load(object sender, EventArgs e)
         {
+            SoundPlayer = new SoundPlayer();
             label4.Text = "Your current balance is: "+ Form1.CurrPlayer.Money.ToString() + "$";
             label1.Text = string.Format("Credits: " + credits);
             label3.Text = "Win: 0";
@@ -131,7 +135,12 @@ namespace VP_GameProject
             total *= Convert.ToInt32(numericUpDown1.Value);
             
                 credits = credits + total;
-                label3.Text = "Win: " + total.ToString();
+            if (total > 0)
+            {
+                SoundPlayer.Stream = Resources.money;
+                SoundPlayer.Play();
+            }
+            label3.Text = "Win: " + total.ToString();
                 label1.Text = "Credits: " + credits.ToString();
             }
             

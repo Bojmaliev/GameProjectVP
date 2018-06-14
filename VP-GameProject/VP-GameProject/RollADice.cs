@@ -4,9 +4,11 @@ using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Linq;
+using System.Media;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using VP_GameProject.Properties;
 
 namespace VP_GameProject
 {
@@ -14,11 +16,14 @@ namespace VP_GameProject
     {
         public static Random random = new Random();
         public RollGame Game { get; set; }
+        public SoundPlayer SoundPlayer;
         public RollADice()
         {
             InitializeComponent();
             lblYourName.Text = Form1.CurrPlayer.Name;
             changeMoney();
+            SoundPlayer = new SoundPlayer();
+
         }
         public void changeMoney() {
             lblMoney.Text = Form1.CurrPlayer.Money + "$";
@@ -38,13 +43,6 @@ namespace VP_GameProject
             rollIt.Start();
         }
 
-        private void tbBet_KeyPress(object sender, KeyPressEventArgs e)
-        {
-            if ((e.KeyChar < '0' || e.KeyChar > '9') && (int)e.KeyChar != 8)
-            {
-                e.Handled = true;
-            }
-        }
 
         private void rollIt_Tick(object sender, EventArgs e)
         {
@@ -53,6 +51,11 @@ namespace VP_GameProject
                 btnGo.Enabled = true;
                 Form1.CurrPlayer.Money += Game.GetMoney();
                 lbl_earned.Text = "You earned "+ Game.GetMoney()+"$";
+                if (Game.GetMoney() > 0)
+                {
+                    SoundPlayer.Stream = Resources.money;
+                    SoundPlayer.Play();
+                }
                 changeMoney();
 
             }
