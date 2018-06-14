@@ -53,7 +53,8 @@ namespace VP_GameProject
            
         private void button1_Click_1(object sender, EventArgs e)
         {
-            bet = (int)numericUpDown1.Value;
+            button1.Enabled = false;
+            bet = Convert.ToInt32(numericUpDown1.Value);
             if (credits >= bet)
             {
                 number = 6;
@@ -76,6 +77,7 @@ namespace VP_GameProject
                 {
                     spinTimer.Stop();
                     calculate();
+                    button1.Enabled = true;
                 }
                 else
                 {
