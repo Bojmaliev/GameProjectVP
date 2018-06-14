@@ -226,6 +226,11 @@
             // 
             this.tbBet.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tbBet.Location = new System.Drawing.Point(438, 658);
+            this.tbBet.Maximum = new decimal(new int[] {
+            1000,
+            0,
+            0,
+            0});
             this.tbBet.Name = "tbBet";
             this.tbBet.Size = new System.Drawing.Size(109, 30);
             this.tbBet.TabIndex = 20;
