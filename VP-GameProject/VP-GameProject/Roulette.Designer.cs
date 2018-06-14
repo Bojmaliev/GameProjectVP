@@ -37,12 +37,12 @@
             this.lblMoney = new System.Windows.Forms.Label();
             this.timerSeconds = new System.Windows.Forms.Timer(this.components);
             this.timerRoll = new System.Windows.Forms.Timer(this.components);
-            this.pbIMAGE = new System.Windows.Forms.PictureBox();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.lbl_Earned = new System.Windows.Forms.Label();
             this.lbl_Bet = new System.Windows.Forms.Label();
             this.listBox1 = new System.Windows.Forms.ListBox();
             this.label3 = new System.Windows.Forms.Label();
+            this.pbIMAGE = new System.Windows.Forms.PictureBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panelGame.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbIMAGE)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -107,27 +107,6 @@
             // 
             this.timerRoll.Tick += new System.EventHandler(this.timerRoll_Tick);
             // 
-            // pbIMAGE
-            // 
-            this.pbIMAGE.Image = ((System.Drawing.Image)(resources.GetObject("pbIMAGE.Image")));
-            this.pbIMAGE.Location = new System.Drawing.Point(29, 27);
-            this.pbIMAGE.Name = "pbIMAGE";
-            this.pbIMAGE.Size = new System.Drawing.Size(600, 600);
-            this.pbIMAGE.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
-            this.pbIMAGE.TabIndex = 1;
-            this.pbIMAGE.TabStop = false;
-            this.pbIMAGE.Visible = false;
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(0, 0);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(600, 600);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
-            this.pictureBox1.TabIndex = 0;
-            this.pictureBox1.TabStop = false;
-            // 
             // lbl_Earned
             // 
             this.lbl_Earned.AutoSize = true;
@@ -168,6 +147,27 @@
             this.label3.Size = new System.Drawing.Size(241, 17);
             this.label3.TabIndex = 8;
             this.label3.Text = "The regions aren\'t calulated properly";
+            // 
+            // pbIMAGE
+            // 
+            this.pbIMAGE.Image = ((System.Drawing.Image)(resources.GetObject("pbIMAGE.Image")));
+            this.pbIMAGE.Location = new System.Drawing.Point(29, 27);
+            this.pbIMAGE.Name = "pbIMAGE";
+            this.pbIMAGE.Size = new System.Drawing.Size(600, 600);
+            this.pbIMAGE.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.pbIMAGE.TabIndex = 1;
+            this.pbIMAGE.TabStop = false;
+            this.pbIMAGE.Visible = false;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(0, 0);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(600, 600);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.pictureBox1.TabIndex = 0;
+            this.pictureBox1.TabStop = false;
             // 
             // Roulette
             // 

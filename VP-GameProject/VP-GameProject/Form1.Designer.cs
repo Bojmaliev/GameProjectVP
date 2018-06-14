@@ -29,7 +29,6 @@
         private void InitializeComponent()
         {
             this.btn_NewUser = new System.Windows.Forms.Button();
-            this.label1 = new System.Windows.Forms.Label();
             this.btn_Login = new System.Windows.Forms.Button();
             this.panel_Main = new System.Windows.Forms.Panel();
             this.btn_Close = new System.Windows.Forms.Button();
@@ -43,6 +42,7 @@
             this.btn_game1 = new System.Windows.Forms.Button();
             this.lbl_Money = new System.Windows.Forms.Label();
             this.lbl_Welcome = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
             this.panel_Main.SuspendLayout();
             this.panel_LoggedIn.SuspendLayout();
             this.panel_Games.SuspendLayout();
@@ -63,19 +63,6 @@
             this.btn_NewUser.Text = "Register";
             this.btn_NewUser.UseVisualStyleBackColor = false;
             this.btn_NewUser.Click += new System.EventHandler(this.btn_NewUser_Click);
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.BackColor = System.Drawing.Color.Black;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 22.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.Lime;
-            this.label1.Location = new System.Drawing.Point(130, 31);
-            this.label1.Name = "label1";
-            this.label1.Padding = new System.Windows.Forms.Padding(5);
-            this.label1.Size = new System.Drawing.Size(564, 54);
-            this.label1.TabIndex = 1;
-            this.label1.Text = "Welcome to your Future Casino";
             // 
             // btn_Login
             // 
@@ -198,7 +185,7 @@
             this.btn_game2.Name = "btn_game2";
             this.btn_game2.Size = new System.Drawing.Size(239, 84);
             this.btn_game2.TabIndex = 7;
-            this.btn_game2.Text = "Game2 Filip";
+            this.btn_game2.Text = "Fruit Spin";
             this.btn_game2.UseVisualStyleBackColor = false;
             this.btn_game2.Click += new System.EventHandler(this.btn_game2_Click);
             // 
@@ -257,6 +244,19 @@
             this.lbl_Welcome.TabIndex = 3;
             this.lbl_Welcome.Text = "{User}, Welcome Back";
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.Black;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 22.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.Lime;
+            this.label1.Location = new System.Drawing.Point(31, 60);
+            this.label1.Name = "label1";
+            this.label1.Padding = new System.Windows.Forms.Padding(5);
+            this.label1.Size = new System.Drawing.Size(723, 54);
+            this.label1.TabIndex = 7;
+            this.label1.Text = "WELCOME TO YOUR FUTURE CASINO";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -285,7 +285,6 @@
         #endregion
 
         private System.Windows.Forms.Button btn_NewUser;
-        private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button btn_Login;
         private System.Windows.Forms.Panel panel_Main;
         private System.Windows.Forms.Button btn_Close;
@@ -299,6 +298,7 @@
         private System.Windows.Forms.Button btn_game3;
         private System.Windows.Forms.Button btn_game2;
         private System.Windows.Forms.Button btn_addMoney;
+        private System.Windows.Forms.Label label1;
     }
 }
 

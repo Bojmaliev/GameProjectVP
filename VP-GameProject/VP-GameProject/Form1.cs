@@ -101,9 +101,11 @@ namespace VP_GameProject
         private void btn_game2_Click(object sender, EventArgs e)
         {
             //Change this variables
-            Roulette RouletteForm = new Roulette();
-            RouletteForm.FormClosed += GameClosed;
-            RouletteForm.Show();
+            //Filip Making 
+            Slot Slot = new Slot();
+            
+            Slot.FormClosed += GameClosed;
+            Slot.Show();
         }
 
         private void btn_game3_Click(object sender, EventArgs e)
@@ -113,5 +115,6 @@ namespace VP_GameProject
             RollADiceGame.FormClosed += GameClosed;
             RollADiceGame.Show();
         }
+        
     }
 }
