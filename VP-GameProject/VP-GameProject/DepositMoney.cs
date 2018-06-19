@@ -30,7 +30,13 @@ namespace VP_GameProject
 
         private void btn_addFunds_Click(object sender, EventArgs e)
         {
-            MoneyToAdd = Convert.ToInt32(tbMoney.Text);
+            int money = 0;
+            int.TryParse(tbMoney.Text, out money);
+            MoneyToAdd = money;
+            if (money <= 0) {
+                MessageBox.Show("Enter valid amount of money !");
+                return;
+            }
             DialogResult = DialogResult.OK;
         }
     }
